@@ -98,7 +98,78 @@ const projectData = {
     ]
 };
 
+let currentIndex = 0;
+let currentCategory = "";
+
 function showCategory(category) {
-    const container = document.getElementById("projects-display");
-    container.innerHTML = "";
+  currentCategory = category;
+  currentIndex = 0;
+  renderCarousel();
+}
+
+function renderCarousel() {
+  const container = document.getElementById("projects-display");
+  container.innerHTML = "";
+
+  const items = projectData[currentCategory];
+  if (!items || items.length === 0) {
+    container.innerHTML = "<p class='placeholder'>No projects found.</p>";
+    return;
+  }
+
+  const project = items[currentIndex];
+
+  const card = document.createElement("div");
+  card.className = "project-card";
+  card.innerHTML = `
+    ${project.image ? `<img src="${project.image}" alt="${project.title}">` : `<div style="width:150px; height:150px; border:2px solid #00ff00; display:flex; align-items:center; justify-content:center; color:#00ff00;">No Image</div>`}
+    <div class="project-content">
+      <div class="project-title">${project.title}</div>
+      <div class="project-description">${project.description || "No description available."}</div>
+      ${project.award ? `<div class="project-awards">🏆 ${project.award}</div>` : ""}
+      ${project.download ? `<a class="project-link" href="${project.download}" target="_blank">🔗 Download </a>` : ""}
+    </div>
+  `;
+
+  container.appendChild(card);
+  const controls = document.createElement("div");
+  controls.className = "carousel-controls";
+
+  const prevBtn = document.createElement("button");
+  prevBtn.className = "carousel-button";
+  prevBtn.innerText = "◀️";
+  prevBtn.onclick = () => {
+    currentIndex = (currentIndex - 1 + items.length) % items.length;
+    renderCarousel();
+  };
+
+  const nextBtn = document.createElement("button");
+  nextBtn.className = "carousel-button";
+  nextBtn.innerText = "▶️";
+  nextBtn.onclick = () => {
+    currentIndex = (currentIndex + 1) % items.length;
+    renderCarousel();
+  };
+
+  controls.appendChild(prevBtn);
+  controls.appendChild(nextBtn);
+  container.appendChild(controls);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  typeText("typed-text", "Select a category...");
+});
+
+function typeText(elementId, text, speed = 80) {
+  const el = document.getElementById(elementId);
+  el.innerHTML = "";
+  let i = 0;
+  const interval = setInterval(() => {
+    if (i < text.length) {
+      el.innerHTML += text.charAt(i);
+      i++;
+    } else {
+      clearInterval(interval);
+    }
+  }, speed);
 }
