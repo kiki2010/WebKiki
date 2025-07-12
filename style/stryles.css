@@ -1,0 +1,65 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffde7b;
+    min-height: max-content;
+}
+
+header {
+    margin-top: 5%;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    border: 2px solid #d34a24;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background: #fff4cd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #d34a24;
+}
+
+.name-box h3 {
+    margin: 0%;
+    font-size: 1rem;
+    color: #555;
+}
+
+.name-box h1 {
+    margin: 0%;
+    font-size: 1.5rem;
+    color: #101820;
+}
+
+.button-group {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.theme-button {
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff4cd;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.theme-button:hover {
+  background-color: #82a6c5;
+}
