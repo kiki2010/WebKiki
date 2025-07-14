@@ -170,3 +170,14 @@ header {
   background-color: #00ff00;
   color: #000;
 }
+
+.contact-card {
+  margin-top: 50px;
+  border: 2px solid #d34a24;
+  padding: 20px 40px;
+  border-radius: 16px;
+  background: #fff4cd;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  width: fit-content;
+  transform: scale(1.05);
+}
