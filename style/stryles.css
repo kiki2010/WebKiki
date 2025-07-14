@@ -15,7 +15,7 @@ header {
 .profile-card {
   display: flex;
   align-items: center;
-  border: 2px solid #d34a24;
+  border: 2px solid #F1CCFF;
   padding: 30px 60px;
   border-radius: 20px;
   background: #fff4cd;
@@ -28,7 +28,7 @@ header {
   height: 180px;
   border-radius: 50%;
   margin-right: 25px;
-  border: 2px solid #d34a24;
+  border: 2px solid #F1CCFF;
 }
 
 .name-box h3 {
@@ -63,7 +63,7 @@ header {
 }
 
 .theme-button:hover {
-  background-color: #82a6c5;
+  background-color: #F1CCFF;
 }
 
 .display-projects {
@@ -174,7 +174,7 @@ header {
 
 .contact-card {
   margin-top: 50px;
-  border: 3px solid #d34a24;
+  border: 3px solid #F1CCFF;
   padding: 30px 60px;
   border-radius: 20px;
   background: #fff4cd;
@@ -195,7 +195,7 @@ header {
   width: 250px;
   height: auto;
   border-radius: 50%;
-  border: 2px solid #d34a24;
+  border: 2px solid #F1CCFF;
   object-fit: cover;
 }
 
@@ -232,6 +232,6 @@ header {
 }
 
 .contact-text button:hover {
-  background-color: #82a6c5;
+  background-color: #F1CCFF;
   color: #fff;
 }
