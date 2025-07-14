@@ -20,22 +20,24 @@ const projectData = {
       title: "Wall-e",
       description: "Inspired by the Disney movie, an educational project with an ESP8266 controlled via Wi-Fi.",
       image: "img/robots/wall-e.jpeg",
-      award: " ",
-      download: " ",
+      award: "",
+      download: "https://prensa.cba.gov.ar/informacion-general/mas-de-1-500-estudiantes-en-una-jornada-de-programacion-y-robotica-en-carlos-paz/",
+      link2: "https://www.youtube.com/watch?v=LBcReW58eu0&list=PL7ie2Y_RCl3W_cpKh4Z0GaOTGP4dyDPOZ&pp=gAQB",
     },
     {
       title: "R2D2",
       description: "Line follower inspired by the robot from the Star Wars saga.",
       image: "img/robots/r2d2.jpg",
-      award: " ",
-      download: " ",
+      award: "",
+      download: "https://www.youtube.com/watch?v=K4iaySrlFJo&list=PL7ie2Y_RCl3VQk3bSd_nUX1wbGXMWMPRr&pp=gAQB",
     },
     {
       title: "KikiBot",
       description: "Small UFO-shaped battle robot.",
       image: "img/robots/sumo.jpg",
-      award: " ",
-      download: " ",
+      award: "",
+      download: "",
+      link2: "",
     }
   ],
   extra: [
@@ -125,6 +127,14 @@ const projectData = {
     },
     {
       title: "2023: Honorable Mention in Web Design Course of Chicas Digitalers by Telecom.",
+      description: "Which featured students from kindergartens, primary schools, and secondary schools in Córdoba and Carlos Paz..",
+      image: "img/robots/wall-e.jpeg",
+      award: "",
+      download: "https://prensa.cba.gov.ar/informacion-general/mas-de-1-500-estudiantes-en-una-jornada-de-programacion-y-robotica-en-carlos-paz/",
+      link2: "https://youtu.be/h0GT-O1h3uo?si=9Ywx3GNBf95eMduw",
+    },
+    {
+      title: "2023: PracTICarlos first edition.",
       description: "First contact with web page development.",
       image: "",
       award: "",
@@ -163,7 +173,8 @@ const projectData = {
       description: "Showing FlameFighters, Wall-e, R2D2 and KikiBot",
       image: "",
       award: "",
-      download: "",
+      download: "https://www.eldiariodecarlospaz.com.ar/sociedad/2024/11/13/mas-de-150-participantes-en-el-segundo-encuentro-de-innovadores-tecnologicos-220163.html",
+      link2: "https://youtube.com/shorts/KUvpq75qIH4?si=4AqIfBGoSHGvlzCA",
     },
     {
       title: "2024: Advanced Web Design Course at Chicas Digitalers.",
@@ -282,6 +293,7 @@ function renderCarousel() {
       <div class="project-description">${project.description || "No description available."}</div>
       ${project.award ? `<div class="project-awards">🏆 ${project.award}</div>` : ""}
       ${project.download ? `<a class="project-link" href="${project.download}" target="_blank">🔗Check it! </a>` : ""}
+      ${project.link2 ? `<a class="project-link" href="${project.link2}" target="_blank">🔗Check it! </a>` : ""}
     </div>
   `;
 
