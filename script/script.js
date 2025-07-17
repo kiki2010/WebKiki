@@ -171,7 +171,7 @@ const projectData = {
     {
       title: "2024: Exhibitor at 'Encuentro de Innovadores Tecnológicos de Villa Carlos Paz'.",
       description: "Showing FlameFighters, Wall-e, R2D2 and KikiBot",
-      image: "",
+      image: "img/events/2024_4.png",
       award: "",
       download: "https://www.eldiariodecarlospaz.com.ar/sociedad/2024/11/13/mas-de-150-participantes-en-el-segundo-encuentro-de-innovadores-tecnologicos-220163.html",
       link2: "https://youtube.com/shorts/KUvpq75qIH4?si=4AqIfBGoSHGvlzCA",
