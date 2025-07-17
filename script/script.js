@@ -121,50 +121,50 @@ const projectData = {
     {
       title: "2023: Semifinalist at Mateclubes from OMA",
       description: "Virtual and in-person group math olympics.",
-      image: "",
+      image: "img/events/2023_3.png",
       award: "",
       download: "",
     },
     {
       title: "2023: Honorable Mention in Web Design Course of Chicas Digitalers by Telecom.",
-      description: "Which featured students from kindergartens, primary schools, and secondary schools in Córdoba and Carlos Paz..",
-      image: "img/robots/wall-e.jpeg",
+      description: "First contact with web page development",
+      image: "img/events/2023_4.png",
       award: "",
-      download: "https://prensa.cba.gov.ar/informacion-general/mas-de-1-500-estudiantes-en-una-jornada-de-programacion-y-robotica-en-carlos-paz/",
-      link2: "https://youtu.be/h0GT-O1h3uo?si=9Ywx3GNBf95eMduw",
+      download: "",
+      link2: "",
     },
     {
       title: "2023: PracTICarlos first edition.",
-      description: "First contact with web page development.",
-      image: "",
-      award: "",
-      download: "",
+      description: "An event where I was able to meet many teenagers with the same interests and introduce Wall-E.",
+      image: "img/robots/wall-e.jpeg",
+      download: "https://prensa.cba.gov.ar/informacion-general/mas-de-1-500-estudiantes-en-una-jornada-de-programacion-y-robotica-en-carlos-paz/",
+      link2: "https://youtu.be/h0GT-O1h3uo?si=dIsGfTKAlbAgMWNG",
     },
     {
       title: "2024: Robotis talks at the Summer Intensive Course of Chicas Digitalers by Telecom.",
       description: "Explaining the project planning and development process, along with virtual tools.",
-      image: "",
+      image: "img/events/2024.png",
       award: "",
-      download: "",
+      download: "https://drive.google.com/file/d/14tP8rZ09KUNxBMaV796ajUBBKGdXot5A/view?usp=drivesdk",
     },
     {
       title: "2024: Silver Medal in Math Kangaroo (OMA).",
       description: "Virtual Individual Math Olympiad.",
-      image: "",
+      image: "img/events/2024_1.png",
       award: "",
       download: "",
     },
     {
       title: "2024: Speaker about Robotics at Random Play.",
       description: "Meeting organized by teenagers in Villa de Rosario. Projects created by teenagers are presented.",
-      image: "",
+      image: "img/events/2024_2.png",
       award: "",
-      download: "",
+      download: "https://youtu.be/CT7xnA-JOYo?si=aqz44vUwf_5Hl1AV",
     },
     {
       title: "2024: Speaker about FlameFighters at 'Semana TIC'.",
       description: "Explaining the development process, utility and operation.",
-      image: "",
+      image: "img/events/2024_3.png",
       award: "",
       download: "",
     },
@@ -240,7 +240,7 @@ const projectData = {
       download: "",
     },
     {
-      title: "2025: Ra ndomPlay",
+      title: "2025: RandomPlay",
       description: "Showing the new app RiverStream.",
       image: "",
       award: "",
@@ -290,7 +290,7 @@ function renderCarousel() {
     ${project.image ? `<img src="${project.image}" alt="${project.title}">` : `<div style="width:150px; height:150px; border:2px solid #00ff00; display:flex; align-items:center; justify-content:center; color:#00ff00;">No Image</div>`}
     <div class="project-content">
       <div class="project-title">${project.title}</div>
-      <div class="project-description">${project.description || "No description available."}</div>
+      <div class="project-description">${project.description || "  "}</div>
       ${project.award ? `<div class="project-awards">🏆 ${project.award}</div>` : ""}
       ${project.download ? `<a class="project-link" href="${project.download}" target="_blank">🔗Check it! </a>` : ""}
       ${project.link2 ? `<a class="project-link" href="${project.link2}" target="_blank">🔗Check it! </a>` : ""}
