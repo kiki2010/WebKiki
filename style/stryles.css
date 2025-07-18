@@ -150,6 +150,11 @@ header {
   color: #00ff00
 }
 
+.project-link {
+  display: block;
+  margin-top: 0.1%;
+}
+
 .carousel-controls {
   display: flex;
   justify-content: space-between;
