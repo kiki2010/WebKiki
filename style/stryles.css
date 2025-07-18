@@ -240,3 +240,20 @@ header {
   background-color: #F1CCFF;
   color: #fff;
 }
+
+footer {
+  margin-top: 60px;
+  width: 100%;
+  background-color: #fff4cd;
+  border-top: 3px solid #F1CCFF;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #101820;
+  font-weight: normal;
+}
