@@ -355,3 +355,42 @@ function typeText(elementId, text, speed = 80) {
     }
   }, speed);
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const groups = document.querySelectorAll('.hobby-group');
+
+  groups.forEach(group => {
+    const photoGroup = group.querySelector('.photo-group');
+    const images = photoGroup.querySelectorAll('.photo-frame');
+
+    function checkHorizontalVisibility() {
+      const containerRect = photoGroup.getBoundingClientRect();
+
+      images.forEach(img => {
+        const imgRect = img.getBoundingClientRect();
+
+        const isVisible = (
+          imgRect.right > containerRect.left &&
+          imgRect.left < containerRect.right
+        );
+
+        if (isVisible) {
+          img.classList.add('visible');
+        } else {
+          img.classList.remove('visible');
+        }
+      });
+    }
+
+    photoGroup.addEventListener('scroll', checkHorizontalVisibility);
+    checkHorizontalVisibility();
+  });
+});
+
+function showMore(button) {
+  const group = button.parentElement;
+  const hiddenImages = group.querySelectorAll('.photo-frame.hidden');
+  hiddenImages.forEach(img => img.style.display = 'block');
+  button.style.display = 'none';
+  window.location.href = 'https://www.youtube.com/';
+}

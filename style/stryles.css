@@ -253,6 +253,65 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   scroll-behavior: smooth;
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.hobby-group {
+  flex: 0 0 auto;
+}
+
+.photo-group {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.photo-group h2 {
+  flex: 1 0 100%;
+  margin-bottom: 20px;
+}
+
+.photo-group::-webkit-scrollbar {
+  height: 8px;
+}
+
+.photo-group::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 4px;
+}
+
+.photo-frame {
+  width: 250px;
+  height: 250px;
+  border-radius: 12px;
+  object-fit: cover;
+  flex-shrink: 0;
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.photo-frame.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.btnmore {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ffde7b;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btnmore:hover {
+  background-color: #F1CCFF;
 }
 
 footer {
