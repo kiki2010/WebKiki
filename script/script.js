@@ -6,6 +6,7 @@ const projectData = {
       image: "img/apps/FlameFighters.png",
       award: "TG 2024 Finalist | TG 2024 Social Impact",
       download: "https://drive.google.com/file/d/18ZRr60LK3G1Hk6mRzfUu4LIiLH605Es7/view?usp=sharing",
+      link2: "https://youtu.be/XPj_qefKi-0?si=nxAPOon67m-sdTVK"
     },
     {
       title: "RiverStream",
@@ -13,6 +14,7 @@ const projectData = {
       image: "img/apps/riverstream.png",
       award: "TG 2025 Regional Honoree Latin America | TG 2025 Special Award Climate Prize | AI Favorite Coolest Projects 2025",
       download: "https://drive.google.com/file/d/1tl-qEZ-nsGtlDHISIv4JyX_9gIaMRI_h/view?pli=1",
+      link2: "https://youtu.be/jkq4ou5rxqM?si=GzRkf5APuyT3eBU0"
     }
   ],
   robots: [
@@ -248,23 +250,30 @@ const projectData = {
     },
     {
       title: "2025: RandomPlay",
-      description: "Showing the new app RiverStream.",
-      image: "",
+      description: "Showing the app RiverStream.",
+      image: "img/events/2025.jpg",
       award: "",
       download: "",
     },
     {
       title: "2025: Technovation Girls",
       description: "Submitting the RiverStream application. Getting the Regional Honoree Latin America and Global Special Award of Climate Prize",
-      image: "",
+      image: "img/events/2025_1.jpg",
       award: "TG 2025 Regional Honoree Latin America | TG 2025 Special Award ClimatePrize",
-      download: "",
+      download: "https://youtu.be/jkq4ou5rxqM?si=MCh5Oblx09z3gLeC",
     },
     {
       title: "2025: Coolest Projects",
       description: "Submitting the RiverStream application. Getting the AI Favorite.",
-      image: "",
+      image: "img/events/2025_2.jpg",
       award: "Judge Feedback: 'I like this as it tackles a global problem (flood disaster preparedness) with data contributions, risk prediction, and awareness visualizations. It wins for its combination of global relevance, technical sophistication, and community-driven approach. It addresses a critical challenge with scalable technology and clear user benefit'.",
+      download: "https://www.youtube.com/live/JZdbBJtsn5k?si=z5B9DEN7wvGBxAcv&t=1456",
+    },
+    {
+      title: "2025: Mesa Redonda: Conectando Ciencia y Gestión para un Futuro Sostenible",
+      description: "Focused on the exchange of experiences and interdisciplinary cooperation.",
+      image: "img/events/2025_3.jpg",
+      award: "",
       download: "",
     },
   ]
