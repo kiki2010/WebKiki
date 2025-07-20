@@ -1,3 +1,5 @@
+//Project Display
+//All the project into different categories.
 const projectData = {
   apps:[
     {
@@ -278,10 +280,11 @@ const projectData = {
     },
   ]
 }
-
+//Index of the current project displayed nad currently selected category
 let currentIndex = 0;
 let currentCategory = "";
 
+//Updates the current category. Resets the index to the first project. And calls renderCarousel() to display the projects in that category. 
 function showCategory(category) {
   currentCategory = category;
   currentIndex = 0;
@@ -293,6 +296,7 @@ function renderCarousel() {
   container.innerHTML = "";
 
   const items = projectData[currentCategory];
+  //If there are no projects
   if (!items || items.length === 0) {
     container.innerHTML = "<p class='placeholder'>No projects found.</p>";
     return;
@@ -300,6 +304,7 @@ function renderCarousel() {
 
   const project = items[currentIndex];
 
+  //Create the project card, showing each value.
   const card = document.createElement("div");
   card.className = "project-card";
   card.innerHTML = `
@@ -314,6 +319,8 @@ function renderCarousel() {
   `;
 
   container.appendChild(card);
+
+  //Carousel buttons
   const controls = document.createElement("div");
   controls.className = "carousel-controls";
 
@@ -338,10 +345,12 @@ function renderCarousel() {
   container.appendChild(controls);
 }
 
+// Please select a category
 document.addEventListener("DOMContentLoaded", () => {
   typeText("typed-text", "Select a category...");
 });
 
+//Write select category like is typed.
 function typeText(elementId, text, speed = 80) {
   const el = document.getElementById(elementId);
   el.innerHTML = "";
@@ -356,6 +365,7 @@ function typeText(elementId, text, speed = 80) {
   }, speed);
 }
 
+//If imáges are visible add the 'visible' class to show animation
 document.addEventListener("DOMContentLoaded", () => {
   const groups = document.querySelectorAll('.hobby-group');
 
@@ -387,6 +397,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+//Buttons at the end of each group
 function showMorecubes(button) {
   const group = button.parentElement;
   const hiddenImages = group.querySelectorAll('.photo-frame.hidden');
