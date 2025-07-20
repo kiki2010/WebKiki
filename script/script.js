@@ -387,10 +387,26 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-function showMore(button) {
+function showMorecubes(button) {
   const group = button.parentElement;
   const hiddenImages = group.querySelectorAll('.photo-frame.hidden');
   hiddenImages.forEach(img => img.style.display = 'block');
   button.style.display = 'none';
-  window.location.href = 'https://www.youtube.com/';
+  window.location.href = 'https://www.worldcubeassociation.org/persons/2023MONS06';
+}
+
+function showMoreGames(button) {
+  const group = button.parentElement;
+  const hiddenImages = group.querySelectorAll('.photo-frame.hidden');
+  hiddenImages.forEach(img => img.style.display = 'block');
+  button.style.display = 'none';
+  window.location.href = 'https://www.youtube.com/@kiki--';
+}
+
+function showMorePhoto(button) {
+  const group = button.parentElement;
+  const hiddenImages = group.querySelectorAll('.photo-frame.hidden');
+  hiddenImages.forEach(img => img.style.display = 'block');
+  button.style.display = 'none';
+  window.location.href = 'collage.html';
 }
