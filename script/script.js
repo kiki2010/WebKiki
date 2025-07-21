@@ -258,6 +258,13 @@ const projectData = {
       download: "",
     },
     {
+      title: "2025: Recognition by PREVENIR project",
+      description: "For the importance of the Riverstream app.",
+      image: "img/events/2025_4.png",
+      award: "",
+      download: "",
+    },
+    {
       title: "2025: Technovation Girls",
       description: "Submitting the RiverStream application. Getting the Regional Honoree Latin America and Global Special Award of Climate Prize",
       image: "img/events/2025_1.jpg",
