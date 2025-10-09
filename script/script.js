@@ -285,6 +285,20 @@ const projectData = {
       award: "",
       download: "",
     },
+    {
+      title: "2025: Orientadora en Club STEAM VCP",
+      description: "Creando proyectos en conjunto con la comunidad, orientados a Róbotica, Ambiente, Programación, Sociedad, etc.",
+      image: "img/events/2025_6.jpg",
+      award: "",
+      download: "https://youtu.be/bQzqXZn0G-g?si=O3GgW9a__d_WSBtF",
+    },
+    {
+      title: "2025: Mercociudades: Encuentro de educación ambiental en Despeñaderos",
+      description: "Comentando sobre la app RiverStream y su impacto a nivel local y global.",
+      image: "img/events/2025_5.png",
+      award: "",
+      download: "https://youtu.be/5OqA0G57u4M?si=iGZkT7lVXnjDxftl",
+    },
   ]
 }
 //Index of the current project displayed nad currently selected category
