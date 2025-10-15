@@ -293,10 +293,38 @@ const projectData = {
       download: "https://youtu.be/bQzqXZn0G-g?si=O3GgW9a__d_WSBtF",
     },
     {
+      title: "TechCamp UCC 2025",
+      description: "Evento donde estudiantes secundarios piensan, diseñan y proponen soluciones a desafíos del mundo real.",
+      image: "",
+      award: "",
+      download: "",
+    },
+    {
       title: "2025: Mercociudades: Encuentro de educación ambiental en Despeñaderos",
       description: "Comentando sobre la app RiverStream y su impacto a nivel local y global.",
       image: "img/events/2025_5.png",
       award: "",
+      download: "https://youtu.be/5OqA0G57u4M?si=iGZkT7lVXnjDxftl",
+    },
+    {
+      title: "Hackathon: Parthenon",
+      description: "Uno de los Hackathones más grandes para chicas y estudiantes no binarios.",
+      image: "",
+      award: "",
+      download: "https://parthenon.hackclub.com/guide",
+    },
+    {
+      title: "Taller Laudato Si'",
+      description: "Presentamos la iniciativa en la Parroquia San José, mostrando como la participación comunitaria es clave para resolver problemas locales.",
+      image: "",
+      award: "",
+      download: "",
+    },
+    {
+      title: "Semifinalista: IE Junior Venture Day Córdoba 2025",
+      description: "Junto con Akari presentamos la aplicación RiverStream, pasando a las Semifinales de IE Junior Venture Day Córdoba 2025",
+      image: "",
+      award: "Semifinalista",
       download: "https://youtu.be/5OqA0G57u4M?si=iGZkT7lVXnjDxftl",
     },
   ]
